@@ -29,8 +29,7 @@ func (self *GaussianProcess) LoadModel(path string) {
 
 }
 
-/*
-   Given matrix m and vector v, compute inv(m)*v.
+/* ApproximateInversion: Given matrix m and vector v, compute inv(m)*v.
    Based on Gibbs and MacKay 1997, and Mark N. Gibbs's PhD dissertation
 
    Details:

@@ -111,7 +111,7 @@ func AlgorithmRunOnDataSet(classifier algo.Classifier, train_dataset, test_datas
 	return auc, predictions
 }
 
-/* Regression */
+/* RegAlgorithmRun: Regression */
 func RegAlgorithmRun(regressor algo.Regressor, train_path string, test_path string, pred_path string, params map[string]string) (float64, []*eval.RealPrediction, error) {
 	global, _ := strconv.ParseInt(params["global"], 10, 64)
 	train_dataset := core.NewRealDataSet()
